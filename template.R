@@ -2,7 +2,13 @@
 # For further details, including examples of the assumptions files which have been filled out, see the package vignettes, 
 # by typing browseVignettes("costmodelr") into your console
 
+# Run these if not already installed
+# install.packages("devtools")
+# install.package("readr)
+# install_github("RobinL/costmodelr")
+
 library(costmodelr)
+library(readr)
 
 # The 'key dates' file specifies the time period over which the cost model produces estimates
 # Input costs outside this date range will be ignored
