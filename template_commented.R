@@ -1,5 +1,5 @@
-# This file provides basic template code for running a cost model using the costmodelr pacakge.  
-# For further details, including examples of the assumptions files which have been filled out, see the package vignettes, 
+# This file provides basic template code for running a cost model using the costmodelr pacakge.
+# For further details, including examples of the assumptions files which have been filled out, see the package vignettes,
 # by typing browseVignettes("costmodelr") into your console
 
 # Run these if not already installed
@@ -25,7 +25,7 @@ rate_card <- readr::read_csv("assumptions/rate_card.csv", col_types=readr::cols(
 user_variable_costs <- readr::read_csv("assumptions/user_variable_costs.csv", col_types =readr::cols())
 users <- readr::read_csv("assumptions/num_users.csv", col_types=readr::cols())  #The model will linearly interpolate between dates
 
-# Add each set of assumptions to model - include only the lines where you're providing a populated assumption file. 
+# Add each set of assumptions to model - include only the lines where you're providing a populated assumption file.
 
 cost_model <- create_cost_model(key_dates) %>%
 #                 add_oneoff_costs(oneoff_costs) %>%
